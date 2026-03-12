@@ -6,6 +6,10 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import org.testng.annotations.Listeners;
+import com.vasitum.automation.listeners.TestListener;
+
+@Listeners(TestListener.class)
 public class LoginTest extends BaseTest {
 
     @DataProvider(name = "loginUsers")

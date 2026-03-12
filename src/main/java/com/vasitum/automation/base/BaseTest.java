@@ -17,11 +17,11 @@ public class BaseTest {
     @BeforeMethod
     public void setup() {
         String browser = ConfigReader.getProperty("browser").toLowerCase();
-        
+
         switch (browser) {
             case "chrome":
                 ChromeOptions options = new ChromeOptions();
-                if(Boolean.parseBoolean(ConfigReader.getProperty("headless"))) {
+                if (Boolean.parseBoolean(ConfigReader.getProperty("headless"))) {
                     options.addArguments("--headless");
                 }
                 driver = new ChromeDriver(options);
@@ -36,7 +36,8 @@ public class BaseTest {
         threadLocalDriver.set(driver);
         getDriver().manage().window().maximize();
         getDriver().manage().deleteAllCookies();
-        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(ConfigReader.getProperty("implicitInfo"))));
+        getDriver().manage().timeouts()
+                .implicitlyWait(Duration.ofSeconds(Long.parseLong(ConfigReader.getProperty("implicitInfo"))));
         getDriver().get(ConfigReader.getUrl());
     }
 

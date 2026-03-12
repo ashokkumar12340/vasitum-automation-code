@@ -7,6 +7,7 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.vasitum.automation.base.BaseTest;
 import com.vasitum.automation.utils.ConfigReader;
 import com.vasitum.automation.utils.ExtentManager;
+import com.vasitum.automation.utils.ReportArchiver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -26,24 +27,31 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
+        String testName = result.getMethod().getMethodName();
+        Object[] params = result.getParameters();
+        if (params != null && params.length > 0) {
+            testName += " - " + params[0].toString();
+        }
+        ExtentTest extentTest = extent.createTest(testName);
         test.set(extentTest);
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
         test.get().log(Status.PASS, "Test Passed");
+        extent.flush(); // Real-time update
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         test.get().log(Status.FAIL, "Test Failed: " + result.getThrowable().getMessage());
-        
+
         WebDriver driver = BaseTest.getDriver();
         if (driver != null) {
             String screenshotPath = captureScreenshot(driver, result.getMethod().getMethodName());
             test.get().fail("Screenshot", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
         }
+        extent.flush(); // Real-time update
     }
 
     @Override
@@ -54,14 +62,18 @@ public class TestListener implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
         extent.flush();
+        // Archive the report and update the index
+        ReportArchiver.archiveReport();
+        ReportArchiver.updateIndex();
     }
-    
+
     // Screenshot capture logic
     public String captureScreenshot(WebDriver driver, String testName) {
         String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         TakesScreenshot ts = (TakesScreenshot) driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
-        String destination = System.getProperty("user.dir") + "/" + ConfigReader.getProperty("screenshotPath") + testName + dateName + ".png";
+        String destination = System.getProperty("user.dir") + "/" + ConfigReader.getProperty("screenshotPath")
+                + testName + dateName + ".png";
         File finalDestination = new File(destination);
         try {
             FileUtils.copyFile(source, finalDestination);

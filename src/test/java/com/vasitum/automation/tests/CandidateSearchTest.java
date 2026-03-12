@@ -9,21 +9,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.vasitum.automation.pages.CandidateSearchPage;
 
-public class CandidateSearchTest {
-
-    WebDriver driver;
-
-    @BeforeMethod
-    public void setup() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://vasitum.com/candidate");
-    }
+public class CandidateSearchTest extends com.vasitum.automation.base.BaseTest {
 
     @Test
     public void verifyCandidateSearch() {
-        CandidateSearchPage cp = new CandidateSearchPage(driver);
+        // Navigate to Candidate Search Page since BaseTest might open Login or
+        // Dashboard
+        getDriver().get("https://vasitum.com/candidate");
+
+        CandidateSearchPage cp = new CandidateSearchPage(getDriver());
 
         String skill = "java";
         String location = "Noida";
@@ -33,12 +27,11 @@ public class CandidateSearchTest {
         cp.clickSearch();
 
         // Wait for URL to update
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-        }
+        org.openqa.selenium.support.ui.WebDriverWait wait = new org.openqa.selenium.support.ui.WebDriverWait(
+                getDriver(), java.time.Duration.ofSeconds(10));
+        wait.until(driver -> driver.getCurrentUrl().contains("query="));
 
-        String url = driver.getCurrentUrl();
+        String url = getDriver().getCurrentUrl();
         System.out.println("Current URL: " + url);
 
         Assert.assertTrue(url.contains("query=" + skill), "Skill not present in URL. Got: " + url);
@@ -46,12 +39,5 @@ public class CandidateSearchTest {
                 "Location not present in URL. Got: " + url);
 
         System.out.println("✅ Candidate Search Test Passed!");
-    }
-
-    @AfterMethod
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
     }
 }

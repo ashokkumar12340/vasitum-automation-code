@@ -1,0 +1,183 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------< com.vasitum:vasitum-automation-platform >---------------
+[INFO] Building Vasitum Automation Platform 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ vasitum-automation-platform ---
+[INFO] skip non existing resourceDirectory C:\Users\rasho\.gemini\antigravity\scratch\vasitum-automation-platform\src\main\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ vasitum-automation-platform ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ vasitum-automation-platform ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ vasitum-automation-platform ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- surefire:3.2.3:test (default-test) @ vasitum-automation-platform ---
+[INFO] Using auto detected provider org.apache.maven.surefire.testng.TestNGProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.vasitum.automation.tests.SkillMatchTest
+--------------------------------------------------
+SKILL MATCHING VALIDATION TEST
+--------------------------------------------------
+JOB REQUIREMENT SKILLS (5): [java, software development, selenium, automation testing, problem-solving]
+
+ANALYZING CANDIDATES...
+
+[1] Candidate: shrim garg (ID: Unknown)
+    Raw Skills Count: 18
+    ? CANDIDATE TOTAL SKILLS (18): [matlab, analytical thinking, python, consultative selling, adaptability, problem-solving, microsoft office 365, technical proficiency, google suite, sql, ssms, client relationship management, java, arduino, figma, collaboration, azure, communication skills]
+    ? MATCHED (Candidate ? Job): [java, problem-solving]
+    ? UNMATCHED (Candidate - Job): [matlab, analytical thinking, python, consultative selling, adaptability, microsoft office 365, technical proficiency, google suite, sql, ssms, client relationship management, arduino, figma, collaboration, azure, communication skills]
+    ? VALIDATION PASSED: shrim garg
+
+[2] Candidate: maxwell puhlman (ID: Unknown)
+    Raw Skills Count: 67
+    ? CANDIDATE TOTAL SKILLS (66): [c++, tomcat, systems analysis & design, platinum, java, apache, gtb, endevor, intertest, rmo, basic +, changeman, ir360, ms/mf cobol, lotus notes, html, shadow services, client/server architecture, mainframe security, ims dl/i and db/dc, vsam, smarttest, mq series, software development, ibm tools (fm, debug, fa, eti), ms dos, dyl280, idms, sdf, customer 1 (design/1 & install/1), roscoe, os utilities, ramis, hod, edit plus, ms office, db2 client, macss, db2/sql v11, dos/vse, eztrieve, cms, testbase, fileaid, qmf, mainframe ftp, problem-solving, total, jcl, cics ts, linux, tso/ispf, legacy system integration, continuous learning, nt,7, and 10, universal client, sar, librarian, os/mvs, extra multi-session, system troubleshooting, spufi, cobol, leech ftp, powerbuilder, xpediter, team collaboration]
+    ? MATCHED (Candidate ? Job): [java, software development, problem-solving]
+    ? UNMATCHED (Candidate - Job): [c++, tomcat, systems analysis & design, platinum, apache, gtb, endevor, intertest, rmo, basic +, changeman, ir360, ms/mf cobol, lotus notes, html, shadow services, client/server architecture, mainframe security, ims dl/i and db/dc, vsam, smarttest, mq series, ibm tools (fm, debug, fa, eti), ms dos, dyl280, idms, sdf, customer 1 (design/1 & install/1), roscoe, os utilities, ramis, hod, edit plus, ms office, db2 client, macss, db2/sql v11, dos/vse, eztrieve, cms, testbase, fileaid, qmf, mainframe ftp, total, jcl, cics ts, linux, tso/ispf, legacy system integration, continuous learning, nt,7, and 10, universal client, sar, librarian, os/mvs, extra multi-session, system troubleshooting, spufi, cobol, leech ftp, powerbuilder, xpediter, team collaboration]
+    ? VALIDATION PASSED: maxwell puhlman
+
+[3] Candidate: nikhil rana (ID: Unknown)
+    Raw Skills Count: 12
+    ? CANDIDATE TOTAL SKILLS (10): [python, java, nlp, selenium, scikit-learn, looker, beautifulsoup, data structures, cntk, opencv]
+    ? MATCHED (Candidate ? Job): [java, selenium]
+    ? UNMATCHED (Candidate - Job): [python, nlp, scikit-learn, looker, beautifulsoup, data structures, cntk, opencv]
+    ? VALIDATION PASSED: nikhil rana
+
+[4] Candidate: traci hagler (ID: Unknown)
+    Raw Skills Count: 54
+    ? CANDIDATE TOTAL SKILLS (51): [workday, restaurant experience, hris, supervising experience, salesforce, curriculum development, conflict management, lms, succession planning, scorm, project management, operations management, software development, creative problem solving, video editing, it, instructional design, adobe indesign, visual design, organizational effectiveness, content management systems, adobe photoshop, microsoft outlook, strategic vision, blackboard, adobe captivate, smartsheet, teaching, sharepoint, knowledge management, problem-solving, training & development, content development, continuous improvement, leadership, training delivery, public speaking, moodle, technical writing, languages, adobe after effects, training / mentoring, detail-oriented, adobe premiere, tableau, curriculum implementation, analysis skills, addie, english - fluent, proofreading, team collaboration]
+    ? MATCHED (Candidate ? Job): [software development, problem-solving]
+    ? UNMATCHED (Candidate - Job): [workday, restaurant experience, hris, supervising experience, salesforce, curriculum development, conflict management, lms, succession planning, scorm, project management, operations management, creative problem solving, video editing, it, instructional design, adobe indesign, visual design, organizational effectiveness, content management systems, adobe photoshop, microsoft outlook, strategic vision, blackboard, adobe captivate, smartsheet, teaching, sharepoint, knowledge management, training & development, content development, continuous improvement, leadership, training delivery, public speaking, moodle, technical writing, languages, adobe after effects, training / mentoring, detail-oriented, adobe premiere, tableau, curriculum implementation, analysis skills, addie, english - fluent, proofreading, team collaboration]
+    ? VALIDATION PASSED: traci hagler
+
+[5] Candidate: craig little (ID: Unknown)
+    Raw Skills Count: 22
+    ? CANDIDATE TOTAL SKILLS (22): [confluence, appium, regression testing, cucumber, android studio, manual testing, uat, automated testing, agile development, jaws screenreader, qtest, accessibility testing, intellij idea, defect reporting, java, selenium, quality assurance, xml, ui design, espresso testing, swift messaging, jira]
+    ? MATCHED (Candidate ? Job): [java, selenium]
+    ? UNMATCHED (Candidate - Job): [confluence, appium, regression testing, cucumber, android studio, manual testing, uat, automated testing, agile development, jaws screenreader, qtest, accessibility testing, intellij idea, defect reporting, quality assurance, xml, ui design, espresso testing, swift messaging, jira]
+    ? VALIDATION PASSED: craig little
+
+[6] Candidate: ahmad ilyas (ID: Unknown)
+    Raw Skills Count: 71
+    ? CANDIDATE TOTAL SKILLS (69): [ci/cd pipelines, css, html5, project portfolio management, salesforce, indesign, java, postman, kanban, ssrs, mysql, phonegap, sap hana, swift, project management, agile leadership, ssas, airwatch mdm, xamarin, google play console, ms project, android studio, .net 6.0, photoshop, xcode, sql server, javascript, flutter, leadership coaching, test-driven development, .net core, nunit, edw, media planning, sitefinity cms, c#.net, ssis, ms sharepoint, ms teams, automated testing, marketing skills, sdlc methodologies, azure devops, change management, extreme programming, aws cloud services, moq framework, git, resource allocation, selenium, lean, scrum master certified, jenkins, mvc 5, soapui, power automate, mongodb, ftp, stakeholders management, microsoft azure fundamentals, adobe premiere, agile scrum, brand management, testflight, tableau, train-the-trainer workshops, google analytics, blackberry mdm, illustrator]
+    ? MATCHED (Candidate ? Job): [java, selenium]
+    ? UNMATCHED (Candidate - Job): [ci/cd pipelines, css, html5, project portfolio management, salesforce, indesign, postman, kanban, ssrs, mysql, phonegap, sap hana, swift, project management, agile leadership, ssas, airwatch mdm, xamarin, google play console, ms project, android studio, .net 6.0, photoshop, xcode, sql server, javascript, flutter, leadership coaching, test-driven development, .net core, nunit, edw, media planning, sitefinity cms, c#.net, ssis, ms sharepoint, ms teams, automated testing, marketing skills, sdlc methodologies, azure devops, change management, extreme programming, aws cloud services, moq framework, git, resource allocation, lean, scrum master certified, jenkins, mvc 5, soapui, power automate, mongodb, ftp, stakeholders management, microsoft azure fundamentals, adobe premiere, agile scrum, brand management, testflight, tableau, train-the-trainer workshops, google analytics, blackberry mdm, illustrator]
+    ? VALIDATION PASSED: ahmad ilyas
+
+[7] Candidate: sarah arnold (ID: Unknown)
+    Raw Skills Count: 5
+    ? CANDIDATE TOTAL SKILLS (5): [selenium, automation testing, manual testing, aws, azure]
+    ? MATCHED (Candidate ? Job): [selenium, automation testing]
+    ? UNMATCHED (Candidate - Job): [manual testing, aws, azure]
+    ? VALIDATION PASSED: sarah arnold
+
+[8] Candidate: melanie stone (ID: Unknown)
+    Raw Skills Count: 8
+    ? CANDIDATE TOTAL SKILLS (8): [kubernetes, java, git, selenium, manual testing, agile, docker, azure]
+    ? MATCHED (Candidate ? Job): [java, selenium]
+    ? UNMATCHED (Candidate - Job): [kubernetes, git, manual testing, agile, docker, azure]
+    ? VALIDATION PASSED: melanie stone
+
+[9] Candidate: mark miller (ID: Unknown)
+    Raw Skills Count: 5
+    ? CANDIDATE TOTAL SKILLS (5): [java, selenium, html/css, javascript, azure]
+    ? MATCHED (Candidate ? Job): [java, selenium]
+    ? UNMATCHED (Candidate - Job): [html/css, javascript, azure]
+    ? VALIDATION PASSED: mark miller
+
+[10] Candidate: angela long (ID: Unknown)
+    Raw Skills Count: 5
+    ? CANDIDATE TOTAL SKILLS (5): [kubernetes, java, git, selenium, javascript]
+    ? MATCHED (Candidate ? Job): [java, selenium]
+    ? UNMATCHED (Candidate - Job): [kubernetes, git, javascript]
+
+[11] Candidate: haley arroyo (ID: Unknown)
+    Raw Skills Count: 5
+    ? CANDIDATE TOTAL SKILLS (5): [python, java, postman, automation testing, react]
+    ? MATCHED (Candidate ? Job): [java, automation testing]
+    ? UNMATCHED (Candidate - Job): [python, postman, react]
+    ? VALIDATION PASSED: haley arroyo
+
+[12] Candidate: chad griffin (ID: Unknown)
+    Raw Skills Count: 5
+    ? CANDIDATE TOTAL SKILLS (5): [kubernetes, java, automation testing, manual testing, ci/cd]
+    ? MATCHED (Candidate ? Job): [java, automation testing]
+    ? UNMATCHED (Candidate - Job): [kubernetes, manual testing, ci/cd]
+    ? VALIDATION PASSED: chad griffin
+
+[13] Candidate: jonathan herrera (ID: Unknown)
+    Raw Skills Count: 10
+    ? CANDIDATE TOTAL SKILLS (10): [kubernetes, node.js, selenium, postman, automation testing, manual testing, ci/cd, html/css, agile, sql]
+    ? MATCHED (Candidate ? Job): [selenium, automation testing]
+    ? UNMATCHED (Candidate - Job): [kubernetes, node.js, postman, manual testing, ci/cd, html/css, agile, sql]
+    ? VALIDATION PASSED: jonathan herrera
+
+[14] Candidate: abigail ross (ID: Unknown)
+    Raw Skills Count: 13
+    ? CANDIDATE TOTAL SKILLS (13): [python, agile sprint collaboration, sql database testing, java, selenium, postman, postgresql, api testing & functional validation, jenkins, defect management, mysql, automated & manual testing, jira]
+    ? MATCHED (Candidate ? Job): [java, selenium]
+    ? UNMATCHED (Candidate - Job): [python, agile sprint collaboration, sql database testing, postman, postgresql, api testing & functional validation, jenkins, defect management, mysql, automated & manual testing, jira]
+    ? VALIDATION PASSED: abigail ross
+
+[15] Candidate: samriddh srivastava (ID: Unknown)
+    Raw Skills Count: 61
+    ? CANDIDATE TOTAL SKILLS (61): [trello, osint and web scraping tools (octoparse and web scraper), redis, wireshark, application security assurance, conflict resolution, java, postman, looker, google cloud, attention to detail, negotiation, intellij ide, mysql, nmap, prompt engineering, python, management skills, data analysis/analytics, documentation and presentation skills, adaptability, kali linux, google sheets, cybersecurity, industrial business knowledge and intelligence, prioritization, creativity and innovation, spring framework, nikto, chrome devtools, decision-making, kafka, data structures and algorithms (dsa), agile, shodan, ms office, customer-centric mindset, interpersonal skills, communication and stakeholder management, google forms, problem-solving, sql, nessus, google docs, research and analytical skills, hql (hibernate), leadership, quick learning, oracle virtual box, chatgpt, empathy, burp suite, consulting, data extraction, collection, and consolidation, problem solving, spring boot, strategic thinking, compliance, collaboration, google slides, vapt (vulnerability assessment and penetration testing)]
+    ? MATCHED (Candidate ? Job): [java, problem-solving]
+    ? UNMATCHED (Candidate - Job): [trello, osint and web scraping tools (octoparse and web scraper), redis, wireshark, application security assurance, conflict resolution, postman, looker, google cloud, attention to detail, negotiation, intellij ide, mysql, nmap, prompt engineering, python, management skills, data analysis/analytics, documentation and presentation skills, adaptability, kali linux, google sheets, cybersecurity, industrial business knowledge and intelligence, prioritization, creativity and innovation, spring framework, nikto, chrome devtools, decision-making, kafka, data structures and algorithms (dsa), agile, shodan, ms office, customer-centric mindset, interpersonal skills, communication and stakeholder management, google forms, sql, nessus, google docs, research and analytical skills, hql (hibernate), leadership, quick learning, oracle virtual box, chatgpt, empathy, burp suite, consulting, data extraction, collection, and consolidation, problem solving, spring boot, strategic thinking, compliance, collaboration, google slides, vapt (vulnerability assessment and penetration testing)]
+    ? VALIDATION PASSED: samriddh srivastava
+
+[16] Candidate: akshay mishra (ID: Unknown)
+    Raw Skills Count: 13
+    ? CANDIDATE TOTAL SKILLS (13): [css, c++, time management, android, kotlin, problem-solving, javascript, java, teamwork, leadership, html, web development, effective communication]
+    ? MATCHED (Candidate ? Job): [java, problem-solving]
+    ? UNMATCHED (Candidate - Job): [css, c++, time management, android, kotlin, javascript, teamwork, leadership, html, web development, effective communication]
+    ? VALIDATION PASSED: akshay mishra
+
+[17] Candidate: uday rana (ID: Unknown)
+    Raw Skills Count: 30
+    ? CANDIDATE TOTAL SKILLS (29): [kubernetes, ci/cd, github actions, docker, react.js, java, postman, devops, figma, google cloud, linux, shell scripting, prometheus, cloudformation, azure, jira, python, software development, c, nginx, javascript, node.js, flutter, restful apis, shell, grafana, nosql (mongodb), terraform, aws]
+    ? MATCHED (Candidate ? Job): [java, software development]
+    ? UNMATCHED (Candidate - Job): [kubernetes, ci/cd, github actions, docker, react.js, postman, devops, figma, google cloud, linux, shell scripting, prometheus, cloudformation, azure, jira, python, c, nginx, javascript, node.js, flutter, restful apis, shell, grafana, nosql (mongodb), terraform, aws]
+    ? VALIDATION PASSED: uday rana
+
+[18] Candidate: sakshi goenka (ID: Unknown)
+    Raw Skills Count: 26
+    ? CANDIDATE TOTAL SKILLS (25): [event management, css, react js, anaconda, problem-solving, dart, java, git, web, figma, linux, leadership, html, mysql, communication, c/c++, python, github, time management, jupyter notebook, adaptability, windows, javascript, visual studio, team collaboration]
+    ? MATCHED (Candidate ? Job): [java, problem-solving]
+    ? UNMATCHED (Candidate - Job): [event management, css, react js, anaconda, dart, git, web, figma, linux, leadership, html, mysql, communication, c/c++, python, github, time management, jupyter notebook, adaptability, windows, javascript, visual studio, team collaboration]
+    ? VALIDATION PASSED: sakshi goenka
+
+[19] Candidate: aditya aggarwal (ID: Unknown)
+    Raw Skills Count: 18
+    ? CANDIDATE TOTAL SKILLS (18): [analytical thinking, css, rdbms, google ad services, bootstrap, creativity & innovation, problem-solving, javascript, jquery, react.js, node.js, java, amazon web services (aws), leadership, html, mysql, c/c++, communication skills]
+    ? MATCHED (Candidate ? Job): [java, problem-solving]
+    ? UNMATCHED (Candidate - Job): [analytical thinking, css, rdbms, google ad services, bootstrap, creativity & innovation, javascript, jquery, react.js, node.js, amazon web services (aws), leadership, html, mysql, c/c++, communication skills]
+    ? VALIDATION PASSED: aditya aggarwal
+
+[20] Candidate: aditya aggarwal (ID: Unknown)
+    Raw Skills Count: 18
+    ? CANDIDATE TOTAL SKILLS (18): [analytical thinking, css, rdbms, google ad services, bootstrap, creativity & innovation, problem-solving, javascript, jquery, react.js, node.js, java, amazon web services (aws), leadership, html, mysql, c/c++, communication skills]
+    ? MATCHED (Candidate ? Job): [java, problem-solving]
+    ? UNMATCHED (Candidate - Job): [analytical thinking, css, rdbms, google ad services, bootstrap, creativity & innovation, javascript, jquery, react.js, node.js, amazon web services (aws), leadership, html, mysql, c/c++, communication skills]
+    ? VALIDATION PASSED: aditya aggarwal
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.832 s -- in com.vasitum.automation.tests.SkillMatchTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.617 s
+[INFO] Finished at: 2026-01-23T10:19:54+05:30
+[INFO] ------------------------------------------------------------------------

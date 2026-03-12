@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Vasitum Automation Suite" parallel="methods" thread-count="2">
+<suite name="Vasitum Automation Suite" verbose="1">
     <listeners>
         <listener class-name="com.vasitum.automation.listeners.TestListener"/>
     </listeners>
 
-    <test name="Login Tests">
+    <test name="All Tests">
         <classes>
-            <class name="com.vasitum.automation.tests.LoginTest"/>
+           
+            <class name="com.vasitum.automation.tests.LoginTest"/>  
+            <class name="com.vasitum.automation.tests.MultiUserLoginTest"/>         
+            <class name="com.vasitum.automation.tests.CandidateSearchTest"/>
+            <class name="com.vasitum.automation.tests.BulkUploadResumeTest"/>
+            <class name="com.vasitum.automation.tests.JobRequisitionTest"/>
+            <class name="com.vasitum.automation.tests.JobApprovalTest"/>
+            <class name="com.vasitum.automation.tests.PostJobTest"/>
+            <class name="com.vasitum.automation.tests.RecruiterChatBotTest"/>
+            <class name="com.vasitum.automation.tests.ReportsModuleTest"/>
+            <class name="com.vasitum.automation.tests.TaskListTest"/>
+            <class name="com.vasitum.automation.tests.StaticPagesTest"/>
+            <class name="com.vasitum.automation.tests.OfferLetterTemplateTest"/>
+            <class name="com.vasitum.automation.tests.SkillMatchTest"/>
+
+            <!-- <class name="com.vasitum.automation.tests.VasitumApiTest"/> -->
+            <!-- <class name="com.vasitum.automation.tests.VasitumRecommendationTest"/> -->
+            <!-- <class name="com.vasitum.automation.tests.MatchResumeSkillsTest"/> -->
         </classes>
     </test>
 </suite>
